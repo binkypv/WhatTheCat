@@ -19,6 +19,7 @@ class CatFactsViewModel(
     val img: LiveData<CatImageDisplay> = _img
 
     fun onGetNewCatFact() {
+        _loading.postValue(Unit)
         viewModelScope.launch {
             _fact.postValue(repository.getCatFact().toDisplay())
             _img.postValue(repository.getCatImage().toDisplay())
