@@ -20,6 +20,6 @@ data class CatFactEntity(
 }
 
 data class CatFactStatusEntity(
-    @SerializedName("vereified") val verified: Boolean,
+    @SerializedName("verified") val verified: Boolean,
     @SerializedName("sentCount") val sentCount: Int
 )

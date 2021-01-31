@@ -34,6 +34,7 @@ ext {
     retrofit_version = "2.9.0"
     okhttp_version = "4.9.0"
     leakcanary_version = "2.6"
+    permissionsdispatcher_version = "4.8.0"
 }
 
 allprojects {

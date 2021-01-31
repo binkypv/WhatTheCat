@@ -3,4 +3,12 @@
     <string name="default_error_message">Something went wrong :(</string>
     <string name="default_error_message_specific">Something went wrong: %s</string>
     <string name="fetching_toast">Fetching cat...</string>
+    <string name="action_share">Share</string>
+    <string name="action_save">Save</string>
+    <string name="sharing_message">Share this cat!</string>
+    <string name="dialog_title">Choose a name for the file to save</string>
+    <string name="dialog_positive_button">Save</string>
+    <string name="dialog_negative_button">Cancel</string>
+    <string name="toast_empty_filename">Filename must not be empty</string>
+    <string name="permission_not_granted">Write permission is mandatory in order to save images</string>
 </resources>
