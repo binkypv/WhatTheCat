@@ -6,7 +6,9 @@ import com.binkypv.data.repository.CatFactsRepositoryImpl
 import com.binkypv.data.utils.Constants.CAT_FACTS_BASE_URL
 import com.binkypv.data.utils.Constants.CAT_IMAGES_BASE_URL
 import com.binkypv.domain.repository.CatFactsRepository
+import com.binkypv.presentation.viewmodel.CatCategoriesViewModel
 import com.binkypv.presentation.viewmodel.CatFactsViewModel
+import com.binkypv.presentation.viewmodel.CatPicsViewModel
 import com.google.gson.FieldNamingPolicy
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
@@ -29,6 +31,8 @@ private const val CAT_FACTS_RETROFIT = "catFactsRetrofit"
 object Modules {
     val viewModelModule = module {
         viewModel { CatFactsViewModel(get()) }
+        viewModel { CatCategoriesViewModel(get()) }
+        viewModel { CatPicsViewModel(get()) }
     }
 
     val repositoryModule = module {

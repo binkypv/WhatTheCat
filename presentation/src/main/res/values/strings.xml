@@ -11,4 +11,5 @@
     <string name="dialog_negative_button">Cancel</string>
     <string name="toast_empty_filename">Filename must not be empty</string>
     <string name="permission_not_granted">Write permission is mandatory in order to save images</string>
+    <string name="categories_title">Categories</string>
 </resources>

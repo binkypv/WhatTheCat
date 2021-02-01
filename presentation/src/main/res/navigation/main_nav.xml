@@ -6,5 +6,36 @@
     <fragment
         android:id="@+id/catFactsFragment"
         android:name="com.binkypv.presentation.view.fragment.CatFactsFragment"
-        android:label="CatFactsFragment" />
+        android:label="CatFactsFragment" >
+        <action
+            android:id="@+id/action_catFactsFragment_to_catCategoriesFragment"
+            app:destination="@id/catCategoriesFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/catCategoriesFragment"
+        android:name="com.binkypv.presentation.view.fragment.CatCategoriesFragment"
+        android:label="CatCategoriesFragment" >
+        <action
+            android:id="@+id/action_catCategoriesFragment_to_catPicsFragment"
+            app:destination="@id/catPicsFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/catPicsFragment"
+        android:name="com.binkypv.presentation.view.fragment.CatPicsFragment"
+        android:label="CatPicsFragment" >
+        <argument
+            android:name="categoryId"
+            app:argType="integer" />
+        <argument
+            android:name="categoryName"
+            app:argType="string" />
+    </fragment>
 </navigation>

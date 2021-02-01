@@ -20,7 +20,7 @@ class CatFactsViewModel(
 
     fun onGetNewCatFact() {
         _loading.postValue(Unit)
-        viewModelScope.launch {
+        viewModelScope.launch(exceptionHandler) {
             _fact.postValue(repository.getCatFact().toDisplay())
             _img.postValue(repository.getCatImage().toDisplay())
         }

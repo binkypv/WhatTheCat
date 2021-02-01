@@ -1,4 +1,4 @@
-package com.binkypv.data.repository
+package com.binkypv.data.model
 
 import com.binkypv.domain.model.CatImageModel
 import com.google.gson.annotations.SerializedName

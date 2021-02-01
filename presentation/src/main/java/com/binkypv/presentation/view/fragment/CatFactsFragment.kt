@@ -19,6 +19,7 @@ import android.widget.Toast
 import androidx.core.content.FileProvider
 import androidx.core.graphics.drawable.toBitmap
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.fragment.findNavController
 import com.binkypv.presentation.R
 import com.binkypv.presentation.databinding.DialogSaveFileBinding
 import com.binkypv.presentation.databinding.FragmentCatFactsBinding
@@ -63,6 +64,9 @@ class CatFactsFragment : BaseFragment<FragmentCatFactsBinding>() {
     private fun initListeners() {
         binding.catButton.setOnClickListener {
             catFactsViewModel.onGetNewCatFact()
+        }
+        binding.categoriesButton.setOnClickListener {
+            navigateToCategories()
         }
     }
 
@@ -200,5 +204,9 @@ class CatFactsFragment : BaseFragment<FragmentCatFactsBinding>() {
             type = MIME_TYPE
         }
         startActivity(Intent.createChooser(shareIntent, getString(R.string.sharing_message)))
+    }
+
+    private fun navigateToCategories() {
+        findNavController().navigate(CatFactsFragmentDirections.actionCatFactsFragmentToCatCategoriesFragment())
     }
 }
