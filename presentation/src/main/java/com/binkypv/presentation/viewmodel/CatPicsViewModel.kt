@@ -20,13 +20,6 @@ class CatPicsViewModel(
     private var fetching = false
     private var page = 1
 
-    fun startPics(categoryId: Int) {
-        _loading.postValue(Unit)
-        viewModelScope.launch(exceptionHandler) {
-            _pics.postValue(repository.getPics(categoryId).map { it.toDisplay() })
-        }
-    }
-
     fun loadImages(categoryId: Int) {
         if (!fetching) {
             fetching = true

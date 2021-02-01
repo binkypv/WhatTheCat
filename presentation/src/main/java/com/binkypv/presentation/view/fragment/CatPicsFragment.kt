@@ -28,7 +28,7 @@ class CatPicsFragment : BaseFragment<FragmentCatPicsBinding>() {
         super.onViewCreated(view, savedInstanceState)
         initViews()
         initObservers()
-        catPicsViewModel.startPics(args.categoryId)
+        catPicsViewModel.loadImages(args.categoryId)
     }
 
     fun initViews() {
