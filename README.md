@@ -1,4 +1,5 @@
 ![](https://github.com/binkypv/WhatTheCat/blob/main/readmeImg/whatTheCatLogo.png?raw=true)
+
 Android app listing cat facts and images! Using [TheCatAPI](https://thecatapi.com/) and [cat-facts](https://alexwohlbruck.github.io/cat-facts/docs/).
 
 ### Overview
