@@ -10,6 +10,9 @@ Android app listing cat facts and images! Using [TheCatAPI](https://thecatapi.co
 - Share fun cat facts along with their, again, unrelated pics
 - List fun cat pics organized in fancy categories
 
+### How to use
+You need to generate an API key for TheCatAPI in order for the app to work. This key can be created [here](https://thecatapi.com/) and must be introduced on the API_KEY variable on the file Modules.kt.
+
 ### Code
 
 #### Layer and module interaction
